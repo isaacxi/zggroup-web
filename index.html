@@ -1,0 +1,263 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZG Group | Ingeniería, Operaciones & Servicios Críticos</title>
+    <!-- Tailwind CSS desde CDN para diseño moderno sin pagar hosting -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        zgBlue: '#0055A5',
+                        zgDark: '#0A192F',
+                        zgAccent: '#00A8E8'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-zgBlue text-white font-bold flex items-center justify-center text-xl shadow-md">ZG</div>
+                <span class="font-bold text-2xl tracking-tight text-zgDark">ZG <span class="text-zgBlue">GROUP</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 font-medium text-slate-600 text-sm">
+                <a href="#soluciones" class="hover:text-zgBlue transition">Soluciones</a>
+                <a href="#experiencia" class="hover:text-zgBlue transition">Experiencia</a>
+                <a href="#nosotros" class="hover:text-zgBlue transition">Nosotros</a>
+            </div>
+            <a href="#contacto" class="bg-zgBlue hover:bg-blue-700 text-white font-semibold px-5 py-2.5 rounded-lg text-sm shadow-md hover:shadow-lg transition">
+                Solicitar Diagnóstico
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (El Gancho) -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-zgDark via-slate-900 to-zgBlue text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <span class="inline-block bg-zgAccent/20 text-zgAccent text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-6 border border-zgAccent/30">
+                    Ingeniería & Excelencia Operacional
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    Maximizamos la disponibilidad y eficiencia de tus líneas de producción.
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-300 mb-8 font-light">
+                    Más de 12 años desarrollando ingeniería especializada, proyectos llave en mano, HVAC, servicios críticos e integración de Inteligencia Artificial para las industrias Farmacéutica, Automotriz y FMCG.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contacto" class="bg-zgAccent hover:bg-cyan-400 text-zgDark font-bold px-8 py-4 rounded-xl text-center shadow-lg transition transform hover:-translate-y-0.5">
+                        Agendar Sesión / Solicitar Diagnóstico OEE
+                    </a>
+                    <a href="#experiencia" class="border border-slate-600 hover:border-slate-400 text-slate-200 font-semibold px-8 py-4 rounded-xl text-center transition">
+                        Ver Casos de Éxito
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOGOS DE CLIENTES (Prueba Social Inmediata) -->
+    <section class="py-10 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-xs font-bold uppercase text-slate-400 tracking-wider mb-6">
+                PROYECTOS Y SOLUCIONES EJECUTADAS PARA LÍDERES INDUSTRIALES
+            </p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all">
+                <span class="font-extrabold text-xl text-slate-700">PiSA Laboratorios</span>
+                <span class="font-extrabold text-xl text-slate-700">BOSCH</span>
+                <span class="font-extrabold text-xl text-slate-700">AMAZON</span>
+                <span class="font-extrabold text-xl text-slate-700">STENDHAL</span>
+                <span class="font-extrabold text-xl text-slate-700">BOMBARDIER</span>
+                <span class="font-extrabold text-xl text-slate-700">MAGNA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAPACIDADES Y SERVICIOS -->
+    <section id="soluciones" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-zgDark mb-4">Soluciones Operativas & Proyectos de Ingeniería</h2>
+                <p class="text-slate-600">Acompañamos a la industria regulada y de manufactura avanzada desde el diagnóstico hasta la entrega llave en mano.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Tarjeta 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-blue-50 text-zgBlue rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-zgDark mb-3">Mejora de Procesos & Diagnóstico OEE</h3>
+                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                        Erradicación de micro-paros crónicos, implementación de TPM (Pasos 1 a 3), SMED y optimización AMEF con apoyo de herramientas de IA para maximizar el rendimiento en piso de planta.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-cyan-50 text-zgBlue rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-fan"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-zgDark mb-3">Servicios Críticos & HVAC Industrial</h3>
+                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                        Ingeniería y construcción de sistemas HVAC para áreas clasificadas, pasivación de acero inoxidable, loops de agua PW/WFI y sistemas de tuberías bajo norma NOM-059/251 y ASME.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-slate-100 text-zgDark rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-zgDark mb-3">Ingeniería BIM & Automatización</h3>
+                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                        Desarrollo de proyectos en metodología BIM (LOD100-400), transferencia de líneas productivas, integración de PLC/SCADA, robótica y manufactura de refacciones/componentes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO GANCHO (Lead Capture) -->
+    <section id="contacto" class="py-20 bg-zgDark text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6">¿Tienes paradas de planta, proyectos HVAC o cuellos de botella en producción?</h2>
+                    <p class="text-slate-300 mb-8 leading-relaxed">
+                        Déjanos tus datos de contacto para enviarte de inmediato nuestra **Presentación Corporativa de Proyectos** o agendar una llamada breve de valoración técnica sin costo para tu planta.
+                    </p>
+                    <div class="space-y-4 text-sm text-slate-300">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-zgAccent"></i>
+                            <span>contacto@zg-group.com.mx</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-zgAccent"></i>
+                            <span>+52 446 141 3453</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-location-dot text-zgAccent"></i>
+                            <span>Cobertura: Querétaro, CDMX, EdoMex y toda la República</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl text-slate-800 shadow-2xl">
+                    <h3 class="text-xl font-bold mb-2">Solicitar Información & Presentación</h3>
+                    <p class="text-xs text-slate-500 mb-6">Completa tus datos y te contactaremos en menos de 24 hrs.</p>
+                    <form action="https://formspree.io/f/xknpzggy" method="POST" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase mb-1">Nombre Completo</label>
+                            <input type="text" name="nombre" required class="w-full px-4 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-zgBlue text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase mb-1">Empresa / Planta</label>
+                            <input type="text" name="empresa" required class="w-full px-4 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-zgBlue text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase mb-1">Correo Profesional</label>
+                            <input type="email" name="email" required class="w-full px-4 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-zgBlue text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase mb-1">Interés Principal</label>
+                            <select name="interes" class="w-full px-4 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-zgBlue text-sm">
+                                <option>Diagnóstico OEE / Reducción de Paros</option>
+                                <option>Servicios Críticos / HVAC / Pasivación</option>
+                                <option>Proyecto de Ingeniería / BIM / Turnkey</option>
+                                <option>Solicitar Presentación Corporativa Completa</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-zgBlue hover:bg-blue-700 text-white font-bold py-3 rounded-lg shadow-md transition">
+                            Enviar y Solicitar Presentación
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-8 text-center text-xs text-slate-500">
+        <p>&copy; 2026 ZG Group. Todos los derechos reservados. Querétaro | CDMX, México.</p>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp para Contacto Directo -->
+    <a href="https://wa.me/524461413453?text=Hola,%20vi%20su%20sitio%20web%20ZG%20Group%20y%20me%20gustaría%20solicitar%20información/presentación%20de%20servicios." target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl z-50 transition transform hover:scale-110 flex items-center justify-center">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
