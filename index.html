@@ -1,42 +1,11 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZG Group | Ingeniería, Operaciones & Servicios Críticos</title>
-    <!-- Tailwind CSS desde CDN para diseño moderno sin pagar hosting -->
+
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -51,30 +20,39 @@
             }
         }
     </script>
-   <link rel="icon" type="image/png" href="logo-icono.png">
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo-icono.png">
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
     <!-- Navegación -->
-  <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 border-b border-slate-100 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
-        <!-- Logotipo oficial ZG Group -->
-        <a href="#" class="flex items-center">
-            <img src="logo-horizontal.png" alt="ZG Group" class="h-10 sm:h-12 w-auto object-contain">
-        </a>
-        <div class="hidden md:flex gap-8 font-medium text-slate-600 text-sm">
-            <a href="#soluciones" class="hover:text-zgBlue transition">Soluciones</a>
-            <a href="#experiencia" class="hover:text-zgBlue transition">Experiencia</a>
-            <a href="#nosotros" class="hover:text-zgBlue transition">Nosotros</a>
-        </div>
-        <a href="#contacto" class="bg-zgBlue hover:bg-blue-700 text-white font-semibold px-5 py-2.5 rounded-lg text-sm shadow-md hover:shadow-lg transition">
-            Solicitar Diagnóstico
-        </a>
-    </div>
-</nav>
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            <!-- Logotipo oficial ZG Group -->
+            <a href="#inicio" class="flex items-center">
+                <img src="logo-horizontal.png" alt="ZG Group" class="h-10 sm:h-12 w-auto object-contain">
+            </a>
+            
+            <!-- Menú de navegación principal -->
+            <div class="hidden md:flex gap-8 font-medium text-slate-600 text-sm">
+                <a href="#inicio" class="hover:text-zgBlue transition">Inicio</a>
+                <a href="#soluciones" class="hover:text-zgBlue transition">Soluciones</a>
+                <a href="#experiencia" class="hover:text-zgBlue transition">Casos de Éxito</a>
+                <a href="#nosotros" class="hover:text-zgBlue transition">Nosotros</a>
+            </div>
 
-    <!-- HERO SECTION (El Gancho) -->
-    <section class="pt-32 pb-20 bg-gradient-to-br from-zgDark via-slate-900 to-zgBlue text-white relative overflow-hidden">
+            <a href="#contacto" class="bg-zgBlue hover:bg-blue-700 text-white font-semibold px-5 py-2.5 rounded-lg text-sm shadow-md hover:shadow-lg transition">
+                Solicitar Diagnóstico
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="pt-32 pb-20 bg-gradient-to-br from-zgDark via-slate-900 to-zgBlue text-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="max-w-3xl">
                 <span class="inline-block bg-zgAccent/20 text-zgAccent text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-6 border border-zgAccent/30">
@@ -84,7 +62,7 @@
                     Maximizamos la disponibilidad y eficiencia de tus líneas de producción.
                 </h1>
                 <p class="text-lg sm:text-xl text-slate-300 mb-8 font-light">
-                    Más de 12 años desarrollando ingeniería especializada, proyectos llave en mano, HVAC, servicios críticos e integración de Inteligencia Artificial para las industrias Farmacéutica, Automotriz y FMCG.
+                    Más de 12 años desarrollando ingeniería especializada, proyectos llave en mano, HVAC, servicios críticos e integración de tecnología para la industria Farmacéutica, Automotriz, Logística y FMCG.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#contacto" class="bg-zgAccent hover:bg-cyan-400 text-zgDark font-bold px-8 py-4 rounded-xl text-center shadow-lg transition transform hover:-translate-y-0.5">
@@ -98,19 +76,20 @@
         </div>
     </section>
 
-    <!-- LOGOS DE CLIENTES (Prueba Social Inmediata) -->
+    <!-- LOGOS DE CLIENTES -->
     <section class="py-10 bg-white border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <p class="text-center text-xs font-bold uppercase text-slate-400 tracking-wider mb-6">
                 PROYECTOS Y SOLUCIONES EJECUTADAS PARA LÍDERES INDUSTRIALES
             </p>
-            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all">
-                <span class="font-extrabold text-xl text-slate-700">PiSA Laboratorios</span>
-                <span class="font-extrabold text-xl text-slate-700">BOSCH</span>
-                <span class="font-extrabold text-xl text-slate-700">AMAZON</span>
-                <span class="font-extrabold text-xl text-slate-700">STENDHAL</span>
-                <span class="font-extrabold text-xl text-slate-700">BOMBARDIER</span>
-                <span class="font-extrabold text-xl text-slate-700">MAGNA</span>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-14 opacity-75 grayscale hover:grayscale-0 transition-all font-bold text-slate-700 text-lg">
+                <span>PiSA Laboratorios</span>
+                <span>BOSCH</span>
+                <span>AMAZON</span>
+                <span>STENDHAL</span>
+                <span>BOMBARDIER</span>
+                <span>MAGNA</span>
+                <span>FERMACA</span>
             </div>
         </div>
     </section>
@@ -120,7 +99,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-3xl font-bold text-zgDark mb-4">Soluciones Operativas & Proyectos de Ingeniería</h2>
-                <p class="text-slate-600">Acompañamos a la industria regulada y de manufactura avanzada desde el diagnóstico hasta la entrega llave en mano.</p>
+                <p class="text-slate-600">Acompañamos a la industria regulada y de manufactura avanzada desde el diagnóstico conceptual hasta la entrega llave en mano.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
@@ -131,7 +110,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-zgDark mb-3">Mejora de Procesos & Diagnóstico OEE</h3>
                     <p class="text-slate-600 text-sm mb-4 leading-relaxed">
-                        Erradicación de micro-paros crónicos, implementación de TPM (Pasos 1 a 3), SMED y optimización AMEF con apoyo de herramientas de IA para maximizar el rendimiento en piso de planta.
+                        Erradicación de micro-paros crónicos, implementación de TPM (Pasos 1 a 3), SMED y optimización AMEF con apoyo de herramientas analíticas para maximizar el rendimiento en piso de planta.
                     </p>
                 </div>
 
@@ -142,19 +121,138 @@
                     </div>
                     <h3 class="text-xl font-bold text-zgDark mb-3">Servicios Críticos & HVAC Industrial</h3>
                     <p class="text-slate-600 text-sm mb-4 leading-relaxed">
-                        Ingeniería y construcción de sistemas HVAC para áreas clasificadas, pasivación de acero inoxidable, loops de agua PW/WFI y sistemas de tuberías bajo norma NOM-059/251 y ASME.
+                        Ingeniería y construcción de sistemas HVAC para áreas clasificadas (Cuartos Limpios), pasivación de acero inoxidable, loops de agua PW/WFI y sistemas hidráulicos bajo norma NOM-059-SSA1 y ASME.
                     </p>
                 </div>
 
                 <!-- Tarjeta 3 -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition">
                     <div class="w-14 h-14 bg-slate-100 text-zgDark rounded-xl flex items-center justify-center text-2xl mb-6">
-                        <i class="fa-solid fa-microchip"></i>
+                        <i class="fa-solid fa-cubes"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-zgDark mb-3">Ingeniería BIM & Automatización</h3>
+                    <h3 class="text-xl font-bold text-zgDark mb-3">Ingeniería BIM & Proyectos PMO</h3>
                     <p class="text-slate-600 text-sm mb-4 leading-relaxed">
-                        Desarrollo de proyectos en metodología BIM (LOD100-400), transferencia de líneas productivas, integración de PLC/SCADA, robótica y manufactura de refacciones/componentes.
+                        Desarrollo de proyectos en metodología BIM (LOD100-400), coordinación MEP, análisis de interferencias, transferencias de líneas productivas y dirección externa de obras industriales.
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CASOS DE ÉXITO DOCUMENTADOS -->
+    <section id="experiencia" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-zgBlue text-xs font-bold uppercase tracking-wider block mb-2">Trayectoria Comprobada</span>
+                <h2 class="text-3xl font-bold text-zgDark mb-4">Casos de Éxito de ZG Group</h2>
+                <p class="text-slate-600">Proyectos de ingeniería básica, detalle y construcción ejecutados bajo las más estrictas normativas de usuario y requerimientos técnicos regulados.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Caso 1: PiSA Farmacéutica -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <span class="bg-blue-100 text-zgBlue text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Sector Farmacéutico</span>
+                    <h3 class="text-xl font-bold text-zgDark mt-4 mb-2">PiSA Laboratorios</h3>
+                    <p class="text-xs font-semibold text-slate-500 uppercase mb-4">Alta Especialidad & Formas Sólidas</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Desarrollo de ingeniería básica, de detalle y construcción para el cumplimiento estricto de la norma <strong>NOM-059-SSA1-2015</strong>. Diseño e instalación de cuartos limpios, HVAC clasificado, sistemas hidrosanitarios y distribución eléctrica.
+                    </p>
+                    <div class="text-xs text-zgBlue font-bold border-t border-slate-200 pt-3">
+                        Disciplinas: HVAC • Hidrosanitario • Eléctrico • A&C • Cuartos Limpios
+                    </div>
+                </div>
+
+                <!-- Caso 2: BOSCH México -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <span class="bg-blue-100 text-zgBlue text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Automotriz / Industrial</span>
+                    <h3 class="text-xl font-bold text-zgDark mt-4 mb-2">BOSCH México</h3>
+                    <p class="text-xs font-semibold text-slate-500 uppercase mb-4">Expansión de Complejo Industrial</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Ingeniería multidisciplinaria integral para la expansión de edificios de producción, almacenes, patios de maniobras, áreas comunes y oficinas corporativas.
+                    </p>
+                    <div class="text-xs text-zgBlue font-bold border-t border-slate-200 pt-3">
+                        Disciplinas: Civil • Arquitectura • HVAC • Eléctrico • Gases Especiales
+                    </div>
+                </div>
+
+                <!-- Caso 3: Amazon México -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <span class="bg-blue-100 text-zgBlue text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Logística & Cadena de Suministro</span>
+                    <h3 class="text-xl font-bold text-zgDark mt-4 mb-2">AMAZON México</h3>
+                    <p class="text-xs font-semibold text-slate-500 uppercase mb-4">Fulfillment BTS MIDI (Mérida)</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Análisis energético y de factibilidad para equipos de logística, ventilación industrial y sistemas HVAC para optimización del consumo operativo en centro de distribución.
+                    </p>
+                    <div class="text-xs text-zgBlue font-bold border-t border-slate-200 pt-3">
+                        Disciplinas: Análisis Energético • Eléctrico • HVAC
+                    </div>
+                </div>
+
+                <!-- Caso 4: Laboratorios RAAM & Stendhal -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <span class="bg-blue-100 text-zgBlue text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Farma & Logística Especializada</span>
+                    <h3 class="text-xl font-bold text-zgDark mt-4 mb-2">Laboratorios RAAM & Stendhal</h3>
+                    <p class="text-xs font-semibold text-slate-500 uppercase mb-4">Plantas Procesadoras & CEDIS</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Ingeniería conceptual para la planta de corticosteroides (RAAM) y estudio de factibilidad técnico-operativo para la relocalización del CEDIS principal de Grupo Stendhal.
+                    </p>
+                    <div class="text-xs text-zgBlue font-bold border-t border-slate-200 pt-3">
+                        Disciplinas: Proceso • Civil • HVAC • Servicios Críticos
+                    </div>
+                </div>
+
+                <!-- Caso 5: Fermaca -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <span class="bg-blue-100 text-zgBlue text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Energía & Gas Natural</span>
+                    <h3 class="text-xl font-bold text-zgDark mt-4 mb-2">FERMACA</h3>
+                    <p class="text-xs font-semibold text-slate-500 uppercase mb-4">Estación EMRyC</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Diseño de ingeniería de detalle, procura, construcción y puesta en marcha para Estación de Medición, Regulación y Control (EMRyC) de gas natural.
+                    </p>
+                    <div class="text-xs text-zgBlue font-bold border-t border-slate-200 pt-3">
+                        Disciplinas: Gas Natural • Eléctrico • Control & Mecánica
+                    </div>
+                </div>
+
+                <!-- Caso 6: Palacio de Hierro -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <span class="bg-blue-100 text-zgBlue text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Comercial / Retail</span>
+                    <h3 class="text-xl font-bold text-zgDark mt-4 mb-2">Palacio de Hierro</h3>
+                    <p class="text-xs font-semibold text-slate-500 uppercase mb-4">Remodelación Perisur & Santa Fe</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Desarrollo de ingeniería básica y de detalle para la modernización de infraestructura electromecánica y sistemas de confort HVAC en tiendas departamentales insignia.
+                    </p>
+                    <div class="text-xs text-zgBlue font-bold border-t border-slate-200 pt-3">
+                        Disciplinas: Eléctrico • Arquitectónico • HVAC
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-zgAccent text-xs font-bold uppercase tracking-wider block mb-2">Sobre ZG Group</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6">Garantizar tu crecimiento es nuestro compromiso</h2>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        ZG Group es una empresa mexicana conformada por un equipo multidisciplinario con más de 12 años de experiencia en el desarrollo de soluciones integrales de ingeniería que mejoran la capacidad y productividad de nuestros clientes.
+                    </p>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Desarrollamos ingeniería básica, de proceso, conceptual, de concurso y de detalle (LOD100 a LOD400 en BIM) adaptada a la normativa específica de cada sector.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <div class="p-5 bg-slate-800/60 rounded-xl border border-slate-700/50">
+                        <h4 class="font-bold text-white mb-1"><i class="fa-solid fa-square-check text-zgAccent mr-2"></i>Software Especializado</h4>
+                        <p class="text-xs text-slate-400">Dominio técnico de REVIT, AutoCAD, SketchUp, SolidWorks y P&ID (Piping).</p>
+                    </div>
+                    <div class="p-5 bg-slate-800/60 rounded-xl border border-slate-700/50">
+                        <h4 class="font-bold text-white mb-1"><i class="fa-solid fa-square-check text-zgAccent mr-2"></i>Cumplimiento Normativo Stricto Sensu</h4>
+                        <p class="text-xs text-slate-400">Diseños bajo normatividad nacional e internacional (NOM-059, COFEPRIS, ASME, ISO).</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -167,7 +265,7 @@
                 <div>
                     <h2 class="text-3xl sm:text-4xl font-bold mb-6">¿Tienes paradas de planta, proyectos HVAC o cuellos de botella en producción?</h2>
                     <p class="text-slate-300 mb-8 leading-relaxed">
-                        Déjanos tus datos de contacto para enviarte de inmediato nuestra **Presentación Corporativa de Proyectos** o agendar una llamada breve de valoración técnica sin costo para tu planta.
+                        Déjanos tus datos de contacto para enviarte de inmediato nuestra <strong>Presentación Corporativa de Proyectos</strong> o agendar una llamada breve de valoración técnica sin costo para tu planta.
                     </p>
                     <div class="space-y-4 text-sm text-slate-300">
                         <div class="flex items-center gap-3">
@@ -180,7 +278,7 @@
                         </div>
                         <div class="flex items-center gap-3">
                             <i class="fa-solid fa-location-dot text-zgAccent"></i>
-                            <span>Cobertura: Querétaro, CDMX, EdoMex y toda la República</span>
+                            <span>Oficinas: Querétaro | CDMX | EdoMex (Cobertura Nacional)</span>
                         </div>
                     </div>
                 </div>
@@ -221,40 +319,13 @@
 
     <!-- FOOTER -->
     <footer class="bg-slate-900 border-t border-slate-800 py-8 text-center text-xs text-slate-500">
-        <p>&copy; 2026 ZG Group. Todos los derechos reservados. Querétaro | CDMX, México.</p>
+        <p>&copy; 2026 ZG Group. Todos los derechos reservados. Querétaro | CDMX | Estado de México.</p>
     </footer>
 
     <!-- Botón Flotante de WhatsApp para Contacto Directo -->
-    <a href="https://wa.me/524461413453?text=Hola,%20vi%20su%20sitio%20web%20ZG%20Group%20y%20me%20gustaría%20solicitar%20información/presentación%20de%20servicios." target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl z-50 transition transform hover:scale-110 flex items-center justify-center">
+    <a href="https://wa.me/524461413453?text=Hola,%20vi%20su%20sitio%20web%20ZG%20Group%20y%20me%20gustaría%20solicitar%20información/presentación%20de%20servicios." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl z-50 transition transform hover:scale-110 flex items-center justify-center">
         <i class="fa-brands fa-whatsapp text-2xl"></i>
     </a>
 
 </body>
-</html>  
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</html>
