@@ -1,9 +1,69 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es-MX" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZG Group | Ingeniería, Operaciones & Servicios Críticos</title>
+    
+    <!-- SEO METADATA B2B -->
+    <title>ZG Group | Gerencia de Proyectos PMO, Ingeniería BIM y Servicios Críticos HVAC</title>
+    <meta name="description" content="Firma de ingeniería y gerencia de proyectos PMO en México. Especialistas en ingeniería BIM (LOD100-400), HVAC para áreas clasificadas NOM-059, diagnóstico OEE y soluciones llave en mano para la industria Farmacéutica, Automotriz y Logística.">
+    <meta name="keywords" content="Gerencia de Proyectos PMO México, Ingeniería BIM Querétaro, HVAC Farmacéutico NOM-059, Diagnóstico OEE planta industrial, Instalaciones electromecánicas MEP, Soluciones llave en mano manufactura">
+    <link rel="canonical" href="https://www.zg-group.com.mx/">
+    <meta name="robots" content="index, follow">
+
+    <!-- OPEN GRAPH / LINKEDIN / SOCIAL MEDIA -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.zg-group.com.mx/">
+    <meta property="og:title" content="ZG Group | Ingeniería, Operaciones & Gerencia de Proyectos PMO">
+    <meta property="og:description" content="Maximizamos la disponibilidad y eficiencia de tus líneas de producción con ingeniería especializada, HVAC bajo norma y gestión BIM/PMO.">
+    <meta property="og:image" content="https://www.zg-group.com.mx/logo-horizontal.png">
+    <meta property="og:site_name" content="ZG Group">
+    <meta property="og:locale" content="es_MX">
+
+    <!-- DATOS ESTRUCTURADOS (SCHEMA.ORG JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.zg-group.com.mx/#organization",
+          "name": "ZG Group",
+          "url": "https://www.zg-group.com.mx/",
+          "logo": "https://www.zg-group.com.mx/logo-horizontal.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+52-446-141-3453",
+            "contactType": "sales",
+            "areaServed": "MX",
+            "availableLanguage": "Spanish"
+          }
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://www.zg-group.com.mx/#service",
+          "name": "ZG Group - Ingeniería y Excelencia Operacional",
+          "url": "https://www.zg-group.com.mx/",
+          "telephone": "+52-446-141-3453",
+          "priceRange": "$$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Querétaro",
+            "addressRegion": "QRO",
+            "addressCountry": "MX"
+          },
+          "areaServed": ["Querétaro", "Ciudad de México", "Estado de México"],
+          "knowsAbout": [
+            "Gerencia de Proyectos PMO",
+            "Ingeniería BIM MEP",
+            "Sistemas HVAC Industriales NOM-059",
+            "Diagnóstico OEE y TPM",
+            "Cuartos Limpios Farmacéuticos"
+          ]
+        }
+      ]
+    }
+    </script>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -34,7 +94,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
             <!-- Logotipo oficial ZG Group -->
             <a href="#inicio" class="flex items-center">
-                <img src="logo-horizontal.png" alt="ZG Group" class="h-10 sm:h-12 w-auto object-contain">
+                <img src="logo-horizontal.png" alt="ZG Group - Ingeniería & Operaciones" class="h-10 sm:h-12 w-auto object-contain">
             </a>
             
             <!-- Menú de navegación principal -->
@@ -46,7 +106,7 @@
             </div>
 
             <a href="#contacto" class="bg-zgBlue hover:bg-blue-700 text-white font-semibold px-5 py-2.5 rounded-lg text-sm shadow-md hover:shadow-lg transition">
-                Solicitar Diagnóstico
+                Solicitar Diagnóstico PMO
             </a>
         </div>
     </nav>
@@ -56,13 +116,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="max-w-3xl">
                 <span class="inline-block bg-zgAccent/20 text-zgAccent text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-6 border border-zgAccent/30">
-                    Ingeniería & Excelencia Operacional
+                    Ingeniería & Gerencia de Proyectos PMO en México
                 </span>
                 <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight mb-6">
                     Maximizamos la disponibilidad y eficiencia de tus líneas de producción.
                 </h1>
-                <p class="text-lg sm:text-xl text-slate-300 mb-8 font-light">
-                    Más de 12 años desarrollando ingeniería especializada, proyectos llave en mano, HVAC, servicios críticos e integración de tecnología para la industria Farmacéutica, Automotriz, Logística y FMCG.
+                <p class="text-lg sm:text-xl text-slate-300 mb-8 font-light leading-relaxed">
+                    Más de 12 años desarrollando ingeniería especializada, proyectos llave en mano, sistemas HVAC bajo norma, servicios críticos e integración BIM para la industria Farmacéutica, Automotriz, Logística y FMCG.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#contacto" class="bg-zgAccent hover:bg-cyan-400 text-zgDark font-bold px-8 py-4 rounded-xl text-center shadow-lg transition transform hover:-translate-y-0.5">
@@ -79,9 +139,9 @@
     <!-- LOGOS DE CLIENTES -->
     <section class="py-10 bg-white border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p class="text-center text-xs font-bold uppercase text-slate-400 tracking-wider mb-6">
-                PROYECTOS Y SOLUCIONES EJECUTADAS PARA LÍDERES INDUSTRIALES
-            </p>
+            <h2 class="text-center text-xs font-bold uppercase text-slate-400 tracking-wider mb-6">
+                PROYECTOS Y SOLUCIONES DE INGENIERÍA EJECUTADAS PARA LÍDERES INDUSTRIALES
+            </h2>
             <div class="flex flex-wrap justify-center items-center gap-8 md:gap-14 opacity-75 grayscale hover:grayscale-0 transition-all font-bold text-slate-700 text-lg">
                 <span>PiSA Laboratorios</span>
                 <span>BOSCH</span>
@@ -98,7 +158,7 @@
     <section id="soluciones" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-zgDark mb-4">Soluciones Operativas & Proyectos de Ingeniería</h2>
+                <h2 class="text-3xl font-bold text-zgDark mb-4">Soluciones Operativas & Proyectos de Ingeniería Especializada</h2>
                 <p class="text-slate-600">Acompañamos a la industria regulada y de manufactura avanzada desde el diagnóstico conceptual hasta la entrega llave en mano.</p>
             </div>
 
@@ -144,8 +204,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-zgBlue text-xs font-bold uppercase tracking-wider block mb-2">Trayectoria Comprobada</span>
-                <h2 class="text-3xl font-bold text-zgDark mb-4">Casos de Éxito de ZG Group</h2>
-                <p class="text-slate-600">Proyectos de ingeniería básica, detalle y construcción ejecutados bajo las más estrictas normativas de usuario y requerimientos técnicos regulados.</p>
+                <h2 class="text-3xl font-bold text-zgDark mb-4">Casos de Éxito y Proyectos Ejecutados por ZG Group</h2>
+                <p class="text-slate-600">Proyectos de ingeniería básica, de detalle y construcción ejecutados bajo las más estrictas normativas de usuario y requerimientos técnicos regulados.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
@@ -236,7 +296,7 @@
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                     <span class="text-zgAccent text-xs font-bold uppercase tracking-wider block mb-2">Sobre ZG Group</span>
-                    <h2 class="text-3xl sm:text-4xl font-bold mb-6">Garantizar tu crecimiento es nuestro compromiso</h2>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6">Garantizar tu crecimiento operativo es nuestro compromiso</h2>
                     <p class="text-slate-300 mb-6 leading-relaxed">
                         ZG Group es una empresa mexicana conformada por un equipo multidisciplinario con más de 12 años de experiencia en el desarrollo de soluciones integrales de ingeniería que mejoran la capacidad y productividad de nuestros clientes.
                     </p>
@@ -246,11 +306,11 @@
                 </div>
                 <div class="space-y-4">
                     <div class="p-5 bg-slate-800/60 rounded-xl border border-slate-700/50">
-                        <h4 class="font-bold text-white mb-1"><i class="fa-solid fa-square-check text-zgAccent mr-2"></i>Software Especializado</h4>
+                        <h3 class="font-bold text-white mb-1"><i class="fa-solid fa-square-check text-zgAccent mr-2"></i>Software Especializado de Ingeniería</h3>
                         <p class="text-xs text-slate-400">Dominio técnico de REVIT, AutoCAD, SketchUp, SolidWorks y P&ID (Piping).</p>
                     </div>
                     <div class="p-5 bg-slate-800/60 rounded-xl border border-slate-700/50">
-                        <h4 class="font-bold text-white mb-1"><i class="fa-solid fa-square-check text-zgAccent mr-2"></i>Cumplimiento Normativo Stricto Sensu</h4>
+                        <h3 class="font-bold text-white mb-1"><i class="fa-solid fa-square-check text-zgAccent mr-2"></i>Cumplimiento Normativo Stricto Sensu</h3>
                         <p class="text-xs text-slate-400">Diseños bajo normatividad nacional e internacional (NOM-059, COFEPRIS, ASME, ISO).</p>
                     </div>
                 </div>
@@ -323,7 +383,7 @@
     </footer>
 
     <!-- Botón Flotante de WhatsApp para Contacto Directo -->
-    <a href="https://wa.me/524461413453?text=Hola,%20vi%20su%20sitio%20web%20ZG%20Group%20y%20me%20gustaría%20solicitar%20información/presentación%20de%20servicios." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl z-50 transition transform hover:scale-110 flex items-center justify-center">
+    <a href="https://wa.me/524461413453?text=Hola,%20vi%20su%20sitio%20web%20ZG%20Group%20y%20me%20gustaría%20solicitar%20información/presentación%20de%20servicios." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl z-50 transition transform hover:scale-110 flex items-center justify-center" aria-label="Contacto por WhatsApp">
         <i class="fa-brands fa-whatsapp text-2xl"></i>
     </a>
 
